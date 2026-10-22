@@ -5,7 +5,7 @@ let currentMonth = today.getMonth();
 const currentDate = today.getDate();
 
 function getShiftIndexForDate(year, month, day) {
-    const baseDate = new Date(2026, 0, 1); // 2026년 1월 1일 기준
+    const baseDate = new Date(2026, 0, 3); // 2026년 1월 3일 기준
     const targetDate = new Date(year, month, day);
     const diffTime = targetDate - baseDate;
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
